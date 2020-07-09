@@ -1,0 +1,1 @@
+docker exec -it travel-diary-proxy-server-project /bin/bash
