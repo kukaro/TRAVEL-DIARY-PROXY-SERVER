@@ -45,6 +45,9 @@ RUN a2enmod proxy
 RUN a2enmod proxy_http
 RUN a2enmod proxy_balancer
 RUN a2enmod lbmethod_byrequests
+
+#add host
+RUN chmod -R 777 /etc/hosts
 EXPOSE 22 80 8080
 
 CMD ["/usr/sbin/sshd", "-D"]

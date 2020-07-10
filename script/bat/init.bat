@@ -1,3 +1,3 @@
 ::run docker
 docker build -t travel-diary-proxy-server-project ../../project/
-docker-compose -f ../../project/docker-compose.yml up -d
+HOST_IP=192.168.0.138 docker-compose -f ../../project/docker-compose.yml up -d
